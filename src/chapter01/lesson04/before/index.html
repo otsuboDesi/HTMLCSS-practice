@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>KOMA-NATSU Web</title>
+    <meta name="keywords" content="にゃんこ,ネコ,ねこ,猫,ねこ紹介,ねこ自慢" />
+    <meta
+      name="description"
+      content="我が家のアイドル、にゃんこ達を紹介します！可愛い猫写真を沢山掲載しています。"
+    />
+  </head>
+
+  <body>
+    <header>
+      <h1>KOMA-NATSU Web</h1>
+      <p>我が家のアイドル、にゃんこ達を紹介します！</p>
+    </header>
+
+    <nav>
+      <ul>
+        <!-- ページ内にジャンプリンクメニューにリンクを貼る方法 -->
+        <!-- linkの指定先にid属性を使って名前を付けておく必要がある -->
+        <li><a href="#intro">はじめに</a></li>
+        <li><a href="#cats">我が家のにゃんこ</a></li>
+        <li><a href="#profile">飼い主紹介</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section id="'intro">
+        <h2>はじめに</h2>
+        <p>
+          ご訪問ありがとうございます。
+          <br />
+          このページは我が家の可愛い黒猫・白猫姉妹を紹介する親馬鹿ホームページです。可愛い写真を沢山掲載していますので、楽しんでいってくださいね。
+          <!-- 開始タグのみで終了タグが存在しない要素を空要素という  大きく改行させたいときはbr要素を連続して作成するのはよくない-> 
+- 装飾として使用してしまいがちになるから
+- ブラウザによって扱いが異なるから
+- メンテナンス性が悪くなるから -->
+          <br />
+          <strong>※掲載している写真の無断転用・転載はご遠慮ください。</strong>
+        </p>
+      </section>
+
+      <section id="'cats">
+        <h2>我が家のにゃんこ</h2>
+        <section>
+          <h3>●小町（こまち・♀）</h3>
+          <!-- src: 目的の画像までのパスを記述する alt: 画像が表示されない際に代わりに表示するテキスト width, height: 必須ではないが指定しておくとレンダリングの体感速度が上がる -->
+          <img src="img/komachi.jpg" alt="小町" width="480" height="320" />
+          <p>
+            生後2ヵ月弱で我が家にやってきた長女・小町。
+            <br />
+            生粋の箱入り娘なので超人見知りでビビリ。人見知りすぎて玄関チャイムが「ピンポーン」と鳴った瞬間にダッシュで消えるため、家族以外にとっては「幻の猫」。
+          </p>
+          <!-- サイト内の別ページにリンクを貼る方法 -->
+          <p><a href="cats/komachi.html">→もっと見る</a></p>
+        </section>
+        <section>
+          <h3>●小夏（こなつ・♀）</h3>
+          <img src="img/konatsu.jpg" alt="小夏" width="480" height="320" />
+          <p>
+            小町のお友達に、と1年後に貰われてきた次女・小夏。
+            <br />
+            埼玉県飯能市の炭鉱で生まれ育った元野生児。小町とは対照的に天真爛漫で社交的。よく食べ、よく遊び、よく眠る元気いっぱいな女の子。
+          </p>
+          <p>→もっと見る</p>
+        </section>
+      </section>
+
+      <section id="profile">
+        <h2>飼い主紹介</h2>
+        <img src="img/avatar.png" alt="アバター画像" width="250" height="250" />
+        <dl>
+          <dt>H.N. ：</dt>
+          <dd>roka404</dd>
+          <dt>仕事 ：</dt>
+          <dd>フリーランスでWeb関係のお仕事してます</dd>
+          <dt>mail ：</dt>
+          <!-- hrefの中にmailto属性を記述することで自動的にメールソフトを起動すように指定できます -->
+          <!-- hrefの中にtel属性を記述することでクリックすると電話をかけることが出来るようになる -->
+          <dd>
+            <a href="mailto:info@roka404.main.jp">info@roka404.main.jp</a>
+          </dd>
+          <dt>Web ：</dt>
+          <dd>
+            <!-- 外部サイトにリンクを貼る方法 -->
+            <a href="http://roka404.main.jp/blog/" target="_blank"
+              >http://roka404.main.jp/blog/</a
+            >
+          </dd>
+        </dl>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        <!-- smallは単にサイズを一回り小さくするのではなく、意味づけされた結果として小文字で表示されるものである -->
+        <small>Copyright c KOMA-NATSU Web All Rights Reserved.</small>
+      </p>
+    </footer>
+  </body>
+</html>
