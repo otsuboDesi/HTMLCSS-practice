@@ -3,6 +3,12 @@
 /*ウィンドウ背景色の設定*/
 body {
   background-color: #fbf9cc;
+  background-image: url(img/bg.png);
+  background-repeat: repeat-x;
+  /* background-repeat: no-repeat; 繰り返しなし */
+  /* background-position: right top; 右上基準で配置 */
+  /* background-attachment: fixed; 背景画像を固定 */
+  /* background-size: 50px 70px; */
 }
 
 /*リンク色の設定*/
