@@ -28,7 +28,7 @@ h1 {
 }
 
 /*大見出しの設定*/
-h2 {
+.h {
   padding: 10px;
   margin-bottom: 30px;
   border: 1px dotted #94c8b1;
