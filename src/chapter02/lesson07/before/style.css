@@ -63,11 +63,29 @@ h3.h-sub span {
 /*「もっと見る」リンクの設定*/
 /*classセレクタは"要素名.属性名"という書き方
 要素名は省略も可能で、要素名を付けたままであれば、その要素でのみスタイルが当たることになる*/
-p.more {
+.more {
   text-align: right;
+}
+.more::after {
+  content: url(img/arrow.png);
+  margin-left: 3px;
+  vertical-align: middle;
 }
 
 /*リンク種別アイコン*/
+/* リンクの種類に応じて自動的に対応するアイコンを表示する */
+/* a要素のtarget属性が_blankだったら以下のスタイルを当てる */
+a[target="_blank"]::after {
+  content: url(img/ico_blank.png);
+  margin-left: 5px;
+  vertical-align: middle;
+}
+/* a要素のhref属性がmailtoで始まっていたら以下のスタイルを当てる */
+a[href^="mailto"]::after {
+  content: url(img/ico_mail.png);
+  margin-left: 5px;
+  vertical-align: middle;
+}
 
 /*セクション間隔*/
 /*sectionの要素の隣にあるｓection要素にのみスタイルを当てる*/
