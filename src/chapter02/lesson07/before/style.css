@@ -1,0 +1,98 @@
+@charset "utf-8";
+
+/*ウィンドウ背景色の設定*/
+body {
+  background-color: #fbf9cc;
+}
+
+/*リンク色の設定*/
+a {
+  color: #df4839;
+}
+/*hoverの時に色を変える*/
+a:hover {
+  color: #ff705b;
+  text-decoration: none;
+}
+
+/*ヘッダー,ナビ,フッターの共通設定*/
+header,
+nav,
+footer {
+  text-align: center;
+}
+
+/*ナビ*/
+
+/*ページタイトルの設定*/
+h1 {
+  width: 300px;
+  margin: 40px auto;
+  padding: 30px;
+  border: 5px solid #95dbbd;
+  background-color: #6fbb9a;
+  color: #fff;
+  font-size: 300%;
+  text-align: center;
+  line-height: 1;
+}
+
+/*大見出しの設定*/
+.h {
+  padding: 10px;
+  margin-bottom: 30px;
+  border: 1px dotted #94c8b1;
+  border-left: 10px solid #d0e35b;
+  color: #6fbb9a;
+}
+
+/*小見出しの設定*/
+/* 親要素の子孫要素にスタイルを当てたい場合は、親要素のclass名子孫要素名を記述する */
+h3.h-sub span {
+  font-weight: normal;
+}
+
+/*コンテンツ枠の設定*/
+#contents {
+  margin: 40px;
+  padding: 40px 80px;
+  border: 1px solid #f6bb9e;
+  background-color: #fff;
+}
+
+/*「もっと見る」リンクの設定*/
+/*classセレクタは"要素名.属性名"という書き方
+要素名は省略も可能で、要素名を付けたままであれば、その要素でのみスタイルが当たることになる*/
+.more {
+  text-align: right;
+}
+.more::after {
+  content: url(img/arrow.png);
+  margin-left: 3px;
+  vertical-align: middle;
+}
+
+/*リンク種別アイコン*/
+/* リンクの種類に応じて自動的に対応するアイコンを表示する */
+/* a要素のtarget属性が_blankだったら以下のスタイルを当てる */
+a[target="_blank"]::after {
+  content: url(img/ico_blank.png);
+  margin-left: 5px;
+  vertical-align: middle;
+}
+/* a要素のhref属性がmailtoで始まっていたら以下のスタイルを当てる */
+a[href^="mailto"]::after {
+  content: url(img/ico_mail.png);
+  margin-left: 5px;
+  vertical-align: middle;
+}
+
+/*セクション間隔*/
+/*sectionの要素の隣にあるｓection要素にのみスタイルを当てる*/
+#contents > section + section {
+  margin-top: 80px;
+}
+
+/*回り込み設定*/
+
+/*円形にクリップ*/
