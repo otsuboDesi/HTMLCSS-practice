@@ -9,6 +9,11 @@ body {
 a {
   color: #df4839;
 }
+/*hoverの時に色を変える*/
+a:hover {
+  color: #ff705b;
+  text-decoration: none;
+}
 
 /*ヘッダー,ナビ,フッターの共通設定*/
 header,
