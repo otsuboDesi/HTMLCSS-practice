@@ -11,6 +11,11 @@ a {
 }
 
 /*ヘッダー,ナビ,フッターの共通設定*/
+header,
+nav,
+footer {
+  text-align: center;
+}
 
 /*ナビ*/
 
