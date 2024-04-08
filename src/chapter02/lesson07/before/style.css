@@ -46,6 +46,8 @@ h3.h-sub span {
 #contents {
   margin: 40px;
   padding: 40px 80px;
+  border: 1px solid #f6bb9e;
+  background-color: #fff;
 }
 
 /*「もっと見る」リンクの設定*/
@@ -58,6 +60,10 @@ p.more {
 /*リンク種別アイコン*/
 
 /*セクション間隔*/
+/*sectionの要素の隣にあるｓection要素にのみスタイルを当てる*/
+section + section {
+  margin-top: 80px;
+}
 
 /*回り込み設定*/
 
