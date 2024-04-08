@@ -61,7 +61,7 @@ p.more {
 
 /*セクション間隔*/
 /*sectionの要素の隣にあるｓection要素にのみスタイルを当てる*/
-section + section {
+#contents > section + section {
   margin-top: 80px;
 }
 
