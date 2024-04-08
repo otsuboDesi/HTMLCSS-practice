@@ -38,6 +38,8 @@ h1 {
   text-shadow: 1px 1px 2px #307657;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   background-image: linear-gradient(to bottom, #6fbb9a, #4a9d79);
+  /* google fontsからimportしたfontを使用する */
+  font-family: "Limelight", cursive;
 }
 
 /*大見出しの設定*/
