@@ -34,8 +34,8 @@
             猫ちゃんの情報
           </caption>
           <tr>
-            <th>お名前</th>
-            <td><input type="text" name="cat-name" /></td>
+            <th>お名前*</th>
+            <td><input type="text" name="cat-name" required autofocus /></td>
           </tr>
           <tr>
             <th>年齢</th>
@@ -83,12 +83,23 @@
             飼い主さんの情報
           </caption>
           <tr>
-            <th>お名前</th>
-            <td><input type="text" name="name" /></td>
+            <th>お名前*</th>
+            <td>
+              <input type="text" name="name" required placeholder="黒猫小町" />
+              <small>※ハンドルネーム可</small>
+            </td>
           </tr>
           <tr>
-            <th>メールアドレス</th>
-            <td><input type="email" name="email" /></td>
+            <th>メールアドレス*</th>
+            <td>
+              <input
+                type="email"
+                name="email"
+                required
+                placeholder="sample@gmail.com"
+              />
+              <small>※半角で入力してください</small>
+            </td>
           </tr>
           <tr>
             <th>コメント</th>
