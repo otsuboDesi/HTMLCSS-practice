@@ -39,19 +39,42 @@
           </tr>
           <tr>
             <th>年齢</th>
-            <td><input type="text" name="age" /></td>
+            <td>
+              <select>
+                <option value="" selected>選択してください</option>
+                <option value="0">1歳未満</option>
+                <option value="1">1～5歳</option>
+                <option value="2">6～10歳</option>
+                <option value="3">11～15歳</option>
+                <option value="4">16～20歳</option>
+                <option value="5">20歳以上</option>
+                <option value="6">不明</option>
+              </select>
+            </td>
           </tr>
           <tr>
             <th>性別</th>
-            <td><input type="text" name="sex" /></td>
+            <td>
+              <input type="radio" name="sex" value="男の子" id="male" />男の子
+              <input type="radio" name="sex" value="女の子" id="female" />女の子
+            </td>
           </tr>
           <tr>
             <th>好物</th>
-            <td><input type="text" name="favorite" /></td>
+            <td>
+              <input type="checkbox" name="favorite" value="お魚" />お魚
+              <input type="checkbox" name="favorite" value="お肉" />お肉
+              <input type="checkbox" name="favorite" value="カリカリ" />カリカリ
+              <input type="checkbox" name="favorite" value="猫缶" />猫缶
+              <input type="checkbox" name="favorite" value="ちゅーる" />ちゅーる
+              <input type="checkbox" name="favorite" value="その他" /><label
+                >その他</label
+              >
+            </td>
           </tr>
           <tr>
             <th>写真</th>
-            <td><input type="text" name="img" /></td>
+            <td><input type="file" name="photo" /></td>
           </tr>
         </table>
 
@@ -65,13 +88,17 @@
           </tr>
           <tr>
             <th>メールアドレス</th>
-            <td><input type="text" name="email" /></td>
+            <td><input type="email" name="email" /></td>
           </tr>
           <tr>
             <th>コメント</th>
-            <td><input type="text" name="comments" /></td>
+            <td><textarea name="comment" rows="4" cols="40"></textarea></td>
           </tr>
         </table>
+        <div>
+          <input type="reset" value="クリア" />
+          <input type="submit" value="投稿" />
+        </div>
       </form>
     </main>
 
