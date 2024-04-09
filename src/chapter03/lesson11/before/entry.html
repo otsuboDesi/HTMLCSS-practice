@@ -20,35 +20,59 @@
       <h1>KOMA-NATSU Web</h1>
       <p>あなたのおうちの自慢の猫ちゃんを投稿してください♪</p>
     </header>
-    <table border="1">
-      <caption>
-        猫ちゃんの情報
-      </caption>
-      <tr>
-        <th>お名前</th>
-        <td></td>
-      </tr>
-      <tr>
-        <th>年齢</th>
-        <td></td>
-      </tr>
-      <tr>
-        <th>性別</th>
-        <td></td>
-      </tr>
-      <tr>
-        <th>好物</th>
-        <td></td>
-      </tr>
-      <tr>
-        <th>写真</th>
-        <td></td>
-      </tr>
-    </table>
+
     <main id="contents">
-      <p>
-        <strong><span class="require">*</span>は必須項目です。</strong>
-      </p>
+      <!-- id: どのフォームから送られてきたのかを判別するために使用する名前
+      action: データの送信先のパス(webサーバーに用意されたプログラムのパス)
+    method: データの送信方式get,postを選択 -->
+      <form id="entryform" action="#" method="post">
+        <p>
+          <strong><span class="require">*</span>は必須項目です。</strong>
+        </p>
+        <table border="1">
+          <caption>
+            猫ちゃんの情報
+          </caption>
+          <tr>
+            <th>お名前</th>
+            <td><input type="text" name="cat-name" /></td>
+          </tr>
+          <tr>
+            <th>年齢</th>
+            <td><input type="text" name="age" /></td>
+          </tr>
+          <tr>
+            <th>性別</th>
+            <td><input type="text" name="sex" /></td>
+          </tr>
+          <tr>
+            <th>好物</th>
+            <td><input type="text" name="favorite" /></td>
+          </tr>
+          <tr>
+            <th>写真</th>
+            <td><input type="text" name="img" /></td>
+          </tr>
+        </table>
+
+        <table border="1">
+          <caption>
+            飼い主さんの情報
+          </caption>
+          <tr>
+            <th>お名前</th>
+            <td><input type="text" name="name" /></td>
+          </tr>
+          <tr>
+            <th>メールアドレス</th>
+            <td><input type="text" name="email" /></td>
+          </tr>
+          <tr>
+            <th>コメント</th>
+            <td><input type="text" name="comments" /></td>
+          </tr>
+        </table>
+      </form>
     </main>
 
     <footer>
