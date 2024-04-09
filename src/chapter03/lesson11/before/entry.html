@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>KOMA-NATSU Web</title>
+    <meta name="keywords" content="にゃんこ,ネコ,ねこ,猫,ねこ紹介,ねこ自慢" />
+    <meta
+      name="description"
+      content="我が家のアイドル、にゃんこ達を紹介します！可愛い猫写真を沢山掲載しています。"
+    />
+    <link href="style.css" rel="stylesheet" media="all" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Limelight"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <h1>KOMA-NATSU Web</h1>
+      <p>あなたのおうちの自慢の猫ちゃんを投稿してください♪</p>
+    </header>
+
+    <main id="contents">
+      <!-- id: どのフォームから送られてきたのかを判別するために使用する名前
+      action: データの送信先のパス(webサーバーに用意されたプログラムのパス)
+    method: データの送信方式get,postを選択 -->
+      <form id="entryform" action="#" method="post">
+        <p>
+          <strong><span class="require">*</span>は必須項目です。</strong>
+        </p>
+        <table border="1">
+          <caption>
+            猫ちゃんの情報
+          </caption>
+          <tr>
+            <th>お名前*</th>
+            <td><input type="text" name="cat-name" required autofocus /></td>
+          </tr>
+          <tr>
+            <th>年齢</th>
+            <td>
+              <select>
+                <option value="" selected>選択してください</option>
+                <option value="0">1歳未満</option>
+                <option value="1">1～5歳</option>
+                <option value="2">6～10歳</option>
+                <option value="3">11～15歳</option>
+                <option value="4">16～20歳</option>
+                <option value="5">20歳以上</option>
+                <option value="6">不明</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <th>性別</th>
+            <td>
+              <input type="radio" name="sex" value="男の子" id="male" />男の子
+              <input type="radio" name="sex" value="女の子" id="female" />女の子
+            </td>
+          </tr>
+          <tr>
+            <th>好物</th>
+            <td>
+              <input type="checkbox" name="favorite" value="お魚" />お魚
+              <input type="checkbox" name="favorite" value="お肉" />お肉
+              <input type="checkbox" name="favorite" value="カリカリ" />カリカリ
+              <input type="checkbox" name="favorite" value="猫缶" />猫缶
+              <input type="checkbox" name="favorite" value="ちゅーる" />ちゅーる
+              <input type="checkbox" name="favorite" value="その他" /><label
+                >その他</label
+              >
+            </td>
+          </tr>
+          <tr>
+            <th>写真</th>
+            <td><input type="file" name="photo" /></td>
+          </tr>
+        </table>
+
+        <table border="1">
+          <caption>
+            飼い主さんの情報
+          </caption>
+          <tr>
+            <th>お名前*</th>
+            <td>
+              <input type="text" name="name" required placeholder="黒猫小町" />
+              <small>※ハンドルネーム可</small>
+            </td>
+          </tr>
+          <tr>
+            <th>メールアドレス*</th>
+            <td>
+              <input
+                type="email"
+                name="email"
+                required
+                placeholder="sample@gmail.com"
+              />
+              <small>※半角で入力してください</small>
+            </td>
+          </tr>
+          <tr>
+            <th>コメント</th>
+            <td><textarea name="comment" rows="4" cols="40"></textarea></td>
+          </tr>
+        </table>
+        <div>
+          <input type="reset" value="クリア" />
+          <input type="submit" value="投稿" />
+        </div>
+      </form>
+    </main>
+
+    <footer>
+      <p><small>Copyright © KOMA-NATSU Web All Rights Reserved.</small></p>
+    </footer>
+  </body>
+</html>
