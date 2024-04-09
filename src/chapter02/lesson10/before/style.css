@@ -83,6 +83,10 @@ h1 {
 /*コンテンツ枠の設定*/
 #contents {
   width: 798px;
+  /* width: calc(960px - 80px - 80px - 1px - 1px); */
+  /* もし、box-sizingを使用すればwidthは960pxのままでいい */
+  /* box-sizing: border-box; */
+  /* width: 960px; */
   margin: 40px auto;
   padding: 40px 80px;
   border: 1px solid #f6bb9e;
@@ -97,6 +101,9 @@ h1 {
   content: url(img/ico_arrow.png);
   margin-left: 3px;
   vertical-align: middle;
+}
+.clear {
+  clear: both;
 }
 
 /*リンク種別アイコン*/
@@ -117,8 +124,23 @@ a[href^="mailto:"]::after {
 }
 
 /*回り込み設定*/
+.imgR {
+  float: right;
+  margin-left: 20px;
+}
+.imgL {
+  float: left;
+  margin-right: 20px;
+}
 
 /*円形にクリップ*/
 .img-round {
   border-radius: 50%;
+}
+
+/*profile*/
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
 }
