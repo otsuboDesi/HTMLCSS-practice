@@ -34,8 +34,9 @@ p {
 /*ページトップへ*/
 #pagetop {
   margin: 0;
+  margin-left: 262px;
   position: fixed;
-  right: 0;
+  left: 50%;
   bottom: 42px;
 }
 
