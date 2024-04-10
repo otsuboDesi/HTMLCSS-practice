@@ -60,12 +60,15 @@ ul {
 /*flex-grow*/
 .no9 .flex.grow1 li:nth-child(1) {
   width: 200px;
+  flex-grow: 1;
 }
 .no9 .flex.grow1 li:nth-child(2) {
   width: 400px;
+  flex-grow: 1;
 }
 .no9 .flex.grow2 li:nth-child(2) {
   width: auto;
+  flex-grow: 1;
   background: #ffd800;
 }
 
@@ -74,6 +77,7 @@ ul {
   width: 200px;
 }
 .no10 .flex li:nth-child(1) {
+  flex-shrink: 0;
   background: #ffd800;
 }
 
