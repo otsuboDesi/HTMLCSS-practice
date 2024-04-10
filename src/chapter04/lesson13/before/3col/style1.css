@@ -5,3 +5,36 @@
   margin: 0;
   padding: 0;
 }
+
+#wrap {
+  width: 940px;
+  margin: 30px auto;
+  background-color: beige;
+}
+
+#header {
+  background-color: lightpink;
+}
+
+#cont1 {
+  width: 300px;
+  float: left;
+  background-color: lightgreen;
+}
+
+#cont2 {
+  width: 300px;
+  float: left;
+  background-color: skyblue;
+}
+
+#cont3 {
+  width: 300px;
+  float: right;
+  background-color: plum;
+}
+
+#footer {
+  clear: both;
+  background-color: gold;
+}
