@@ -19,13 +19,17 @@
 #main {
   width: 500px;
   background-color: palegreen;
+  float: right;
 }
 
 #side {
   width: 280px;
   background-color: skyblue;
+  float: left;
 }
 
 #footer {
   background-color: gold;
+  /* floatによる回り込みの解除 */
+  clear: both;
 }
