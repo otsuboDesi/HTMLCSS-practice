@@ -25,11 +25,18 @@ p {
   width: 100%;
   padding: 10px 0;
   background-color: #f00;
+  /* fixedで固定配置されたボックスはwindowサイズを変更したり、コンテンツをスクロールさせても常に下に固定されている */
+  position: fixed;
+  left: 0;
+  bottom: 0;
 }
 
 /*ページトップへ*/
 #pagetop {
   margin: 0;
+  position: fixed;
+  right: 0;
+  bottom: 42px;
 }
 
 #pagetop a {
