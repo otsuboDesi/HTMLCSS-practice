@@ -50,6 +50,25 @@ h1 {
 }
 
 /*表組みの設定*/
+.entryTable {
+  width: 100%;
+  margin-bottom: 30px;
+  border: 1px solid #f6bb9e;
+  border-collapse: collapse;
+}
+.entryTable th,
+.entryTable td {
+  padding: 10px 20px;
+  border: 1px solid #f6bb9e;
+}
+.entryTable th {
+  width: 10em;
+  background-color: #ffeeee;
+  text-align: left;
+}
+.entryTable caption {
+  margin-bottom: 10px;
+}
 
 /*入力フォームの設定*/
 
