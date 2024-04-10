@@ -29,3 +29,8 @@
 #footer {
   background-color: gold;
 }
+
+#contents {
+  display: flex;
+  justify-content: space-between;
+}
