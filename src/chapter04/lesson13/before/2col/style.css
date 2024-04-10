@@ -5,3 +5,27 @@
   margin: 0;
   padding: 0;
 }
+
+#wrap {
+  width: 800px;
+  margin: 30px;
+  background-color: beige;
+}
+
+#header {
+  background-color: lightpink;
+}
+
+#main {
+  width: 500px;
+  background-color: palegreen;
+}
+
+#side {
+  width: 280px;
+  background-color: skyblue;
+}
+
+#footer {
+  background-color: gold;
+}
