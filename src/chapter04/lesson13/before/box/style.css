@@ -1,0 +1,54 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+#wrap {
+  width: 960px;
+  margin: 0 auto;
+  background-color: beige;
+}
+
+#header {
+  margin-bottom: 20px;
+  background-color: lightpink;
+}
+
+#footer {
+  background-color: gold;
+  clear: both;
+}
+
+.box li {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+/* 疑似クラスを活用してカラム落ちを修正する 4n -> ４の倍数に該当するli要素にだけ設定する*/
+/* .box li:nth-child(4n) {
+  margin-right: 0;
+} */
+
+/* 否定疑似クラスを活用 4n -> ４の倍数を除くli要素にだけ設定する
+*/
+/* .box li:not(:nth-child(4n)) {
+  margin-right: 20px;
+} */
+
+/* 親要素にネガティブマージンを設定する */
+.box {
+  margin-right: -20px;
+}
+
+/* はみ出した分を非表示にする */
+#main {
+  overflow: hidden;
+}
