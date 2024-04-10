@@ -90,4 +90,5 @@ ul {
   flex-basis: 200px;
 }
 .no11 .flex {
+  flex-direction: column;
 }
