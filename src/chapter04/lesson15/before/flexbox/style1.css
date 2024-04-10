@@ -76,5 +76,8 @@ ul {
 
 /*flex-direction*/
 .no6 .flex {
-  flex-direction: row; /*初期値*/
+  /* flex-direction: row; 初期値 */
+  /* flex-direction: row-reverse; */
+  /* flex-direction: column; */
+  flex-direction: column-reverse;
 }
