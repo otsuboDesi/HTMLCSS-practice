@@ -89,6 +89,12 @@ h1 {
 }
 
 /*カーソル形状*/
+label,
+input,
+textarea,
+select {
+  cursor: pointer;
+}
 
 /*ボタンの設定*/
 
