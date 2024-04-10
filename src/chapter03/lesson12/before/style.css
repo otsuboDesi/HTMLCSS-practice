@@ -97,6 +97,25 @@ select {
 }
 
 /*ボタンの設定*/
+.entryBtns {
+  text-align: center;
+}
+.entryBtns input {
+  width: 200px;
+  margin: 0 10px;
+  padding: 10px;
+  background: #fff;
+  border: 2px solid #f6bb9e;
+  border-radius: 10px;
+  font-size: 1em;
+  -webkit-appearance: none;
+}
+.entryBtns input[type="submit"] {
+  background: #fadccc;
+}
+.entryBtns input:hover {
+  opacity: 0.7;
+}
 
 /*ボタンの基本スタイル*/
 
