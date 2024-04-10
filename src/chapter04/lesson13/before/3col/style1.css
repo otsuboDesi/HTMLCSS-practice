@@ -19,6 +19,7 @@
 #cont1 {
   width: 300px;
   float: left;
+  margin-right: 20px;
   background-color: lightgreen;
 }
 
