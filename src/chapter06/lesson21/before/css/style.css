@@ -17,10 +17,17 @@
 
 /*scale()*/
 .scale01 {
+  /* 80%に縮小 */
+  transform: scale(0.8, 0.8);
 }
 .scale02 {
+  /* 横を半分に縮小 */
+  transform: scale(0.5, 1);
 }
+
 .scale03 {
+  /* 縦を1.5倍に拡大 */
+  transform: scale(1, 1.5);
 }
 
 /*rotate()*/
