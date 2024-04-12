@@ -2,10 +2,19 @@
 ---------------------------*/
 
 /*〜で始まる*/
+li[class^="START"] {
+  border-color: #f00;
+}
 
 /*〜で終わる*/
+li[class$="END"] {
+  border-color: #f00;
+}
 
 /*〜を含む*/
+li[class*="CNT"] {
+  border-color: #f00;
+}
 
 /* 練習 =========== */
 
