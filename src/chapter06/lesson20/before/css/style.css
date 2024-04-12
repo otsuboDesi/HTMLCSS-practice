@@ -203,6 +203,13 @@
 
 /*repeating-radial-gradient()*/
 .grad08 {
+  background: repeating-radial-gradient(
+    circle farthest-side,
+    #fff 25%,
+    #faf 35%,
+    #faf 35%,
+    #fff 50%
+  );
 }
 
 /* フィルター効果
