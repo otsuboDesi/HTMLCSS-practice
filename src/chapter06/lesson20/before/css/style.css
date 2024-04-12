@@ -95,17 +95,31 @@
 }
 
 /*box-shadow*/
+/* box-shadow: X方向の距離 y方向の距離 ぼかし幅 広がり(省略可) 影色 inset(内側に影を付ける場合のみ設定); */
+/* drop shadow */
 .bs01 {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
+/* glow */
 .bs02 {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+/* inset drop shadow */
 .bs03 {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5) inset;
 }
+/* inset glow */
 .bs04 {
+  box-shadow: 0 0 15px rgba(18, 154, 238, 0.5) inset;
 }
+/* spread shadow */
 .bs05 {
+  box-shadow: 0 0 0 6px #9cc883;
 }
+/* multi shadow */
 .bs06 {
+  box-shadow: 0 0 0 3px #fff inset, /*ボーダーの内側の白線*/ 0 0 0 3px #fffa9a,
+    /*ボーダーの外側１つめの黄色線*/ 0 0 0 6px #9cc883; /*ボーダーの外側２つめの緑線*/
 }
 
 /*border-image*/
