@@ -62,17 +62,17 @@ a[href$=".pdf"] {
 
 /* 〜of-type系 =========== */
 /*最初の要素*/
-.oftype :first-of-type {
+.ofType :first-of-type {
   border-color: #f00;
 }
 
 /*偶数個目の要素*/
-.oftype :nth-of-type(even) {
+.ofType :nth-of-type(even) {
   border-color: #00f;
 }
 
 /*唯一の要素*/
-.oftype :only-of-type {
+.ofType :only-of-type {
   color: #f00;
 }
 
