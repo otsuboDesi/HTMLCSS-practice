@@ -52,7 +52,7 @@ a[href$=".pdf"] {
 
 /*偶数番目の子要素*/
 .child :nth-child(even) {
-  color: #ccc;
+  background-color: #ccc;
 }
 
 /*2番目を先頭に３つおきの子要素*/
@@ -62,10 +62,19 @@ a[href$=".pdf"] {
 
 /* 〜of-type系 =========== */
 /*最初の要素*/
+.oftype :first-of-type {
+  border-color: #f00;
+}
 
 /*偶数個目の要素*/
+.oftype :nth-of-type(even) {
+  border-color: #00f;
+}
 
 /*唯一の要素*/
+.oftype :only-of-type {
+  color: #f00;
+}
 
 /* 練習 =========== */
 /*しましまテーブル*/
