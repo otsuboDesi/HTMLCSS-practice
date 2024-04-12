@@ -105,6 +105,24 @@ not()の中に入れているがid,classセレクタやタイプを入れるこ�
 
 /*有効な選択肢のラベルのスタイル*/
 
+/* inputに隣接している有効なフォームラベルはカーソルを指にする */
+.ui input:enabled + label {
+  cursor: pointer;
+}
+
+/* inputに隣接している有効なフォームラベルはhoverの時に色を変える */
+.ui input:enabled + label:hover {
+  color: #00c4ab;
+}
+
 /*無効な選択肢のラベルのスタイル*/
+/* inputに隣接している無効なフォームラベルは文字色を変更する */
+.ui input:disabled + label {
+  color: #ccc;
+}
 
 /*チェックされた選択肢のラベルのスタイル*/
+/* inputに隣接しているcheckされたフォームラベルは文字色を変更する */
+.ui input:checked + label {
+  background: #cceebb;
+}
