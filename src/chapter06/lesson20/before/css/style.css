@@ -1,0 +1,243 @@
+/* テキストの装飾
+---------------------------*/
+
+/*text-shadow*/
+.ts01 {
+  /* text-shadow: X方向の距離 y方向の距離 ぼかし幅 影色; */
+  /* Drop shadow */
+  text-shadow: 2px 2px 3px #999;
+}
+.ts02 {
+  /* Glow */
+  color: #fff;
+  text-shadow: 0 0 5px #999;
+}
+.ts03 {
+  /* Bavel */
+  color: #ccc;
+  text-shadow: -1px -1px 0 #fff, 1px 1px 0 #aaa;
+}
+.ts04 {
+  /* Emboss */
+  color: #ccc;
+  text-shadow: -1px -1px 0 #aaa, 1px 1px 0 #fff;
+}
+.ts05 {
+  /* Stroke */
+  color: #fff;
+  text-shadow: 1px 1px 0 #999, -1px 1px #999, 1px -1px #999, -1px -1px #999;
+}
+.ts06 {
+  /* Neon */
+  /* 白門の周囲に明るい色のシャドウを何回か重ねるとネオンになります */
+  text-shadow: 0 0 5px #fff, 0 0 13px #f03, 0 0 13px #f03, 0 0 13px #f03,
+    0 0 13px #f03;
+}
+
+/*text-stroke*/
+.t-stroke01 {
+  /* text-strokeはIE非対応 */
+  /* このプロパティはテキストの内側に線を引くため、ある程度太いフォントでないと見栄えが悪くなってしまう */
+  -webkit-text-stroke: 1px #000;
+}
+.t-stroke02 {
+  -webkit-text-stroke: 1px #000;
+  text-shadow: 2px 2px 0 #000;
+}
+
+/*background-clip: text*/
+/* background-clipはIE非対応 */
+/* background-clipは背景の画像をボックスのどの領域で切り抜くかを指定するプロパティ値を'text'にすると背景画像をテキストの形に切り抜くことが出来ます */
+.clip {
+  background: url(../img/bg_flower.jpg) center center no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ボックスの装飾
+---------------------------*/
+/*border-radius*/
+.bdr01 {
+  border-radius: 10px;
+}
+.bdr02 {
+  /* 50px: 左上と右下
+    0: 右上と左下 */
+  border-radius: 50px 0;
+}
+.bdr03 {
+  /* 左上、右上と左下、右下*/
+  border-radius: 0 25px 50px;
+}
+.bdr04 {
+  border-radius: 0 10px 25px 50px;
+}
+
+/* 正円 */
+.bdr .circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+/* 楕円 */
+.bdr .ellipse {
+  width: 250px;
+  height: 150px;
+  border-radius: 50%;
+}
+/* 膨らんだ長方形 */
+.bdr05 {
+  border-radius: 50px 30px;
+}
+/* ゆがみ円 */
+.bdr06 {
+  border-radius: 30% 60% 60% 50%/ 80% 40% 70% 30%;
+}
+
+/*box-shadow*/
+/* box-shadow: X方向の距離 y方向の距離 ぼかし幅 広がり(省略可) 影色 inset(内側に影を付ける場合のみ設定); */
+/* drop shadow */
+.bs01 {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+/* glow */
+.bs02 {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+/* inset drop shadow */
+.bs03 {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5) inset;
+}
+/* inset glow */
+.bs04 {
+  box-shadow: 0 0 15px rgba(18, 154, 238, 0.5) inset;
+}
+/* spread shadow */
+.bs05 {
+  box-shadow: 0 0 0 6px #9cc883;
+}
+/* multi shadow */
+.bs06 {
+  box-shadow: 0 0 0 3px #fff inset, /*ボーダーの内側の白線*/ 0 0 0 3px #fffa9a,
+    /*ボーダーの外側１つめの黄色線*/ 0 0 0 6px #9cc883; /*ボーダーの外側２つめの緑線*/
+}
+
+/*border-image*/
+/* border-image */
+/* border-imageを使用する場合は、一部のブラウザにバグがあるため、必ず別途border-styleを設定しておく必要がある。 */
+.bdi {
+  border: 24px solid #fbef82; /*フォールバック指定: border-imageが適用されなかった場合これが表示される*/
+  border-image: url(../img/bdi.png) 24 round;
+  /* リピート指定を複数にした場合,最初の値が上下、次の値が左右になる */
+  border-image: url(../img/bdi.png) 24 round stretch;
+
+  /* スライスサイズが異なる線幅指定をした場合 */
+  /* border-widthで指定する */
+  border: 12px solid #fbef82;
+  border-image: url(../img/bdi.png) 24 round;
+  /* border-image-widthで指定する */
+  border: 12px solid #fbef82;
+  border-image: url(../img/bdi.png) 24 / 12px round;
+}
+
+/* 背景画像とグラデーション
+---------------------------*/
+/*background-size*/
+.bgsize02 {
+  /* 写真の比率を保ちつつ背景画像は常に立てまたは横の1辺に100％フィットして要素全体を覆う状態になる */
+  background-size: cover;
+}
+.bgsize03 {
+  background-size: contain;
+}
+.bgsize04 {
+  /* 写真の比率を無視して常にその背景画像で要素全体を覆う状態になる */
+  background-size: 100% 100%;
+}
+.bgsize05 {
+  background-size: 170px 100px;
+}
+
+/*linear-gradient()*/
+/* 線形グラデーション */
+.grad01 {
+  /* 上から下への２色グラデーション */
+  /* default valueは上から下へなのでto bottomはいらない */
+  background: linear-gradient(to bottom, #f36, #fff);
+}
+.grad02 {
+  /* 左から右への3色グラデーション */
+  background: linear-gradient(to right, #f36 0%, #fff 50%, #f63 100%);
+}
+.grad03 {
+  /* 左上から右下への3色グラデーション */
+  /* to right bottomの代わりに角度（deg）を使うこともできる */
+  background: linear-gradient(to right bottom, #f36 0%, #fff 50%, #f63 100%);
+}
+
+/*radial-gradient()*/
+/* 円形グラデーション */
+.grad04 {
+  /* 正円 */
+  background: radial-gradient(circle, #fff, #f36);
+}
+.grad05 {
+  /* サイズを最も近い辺まで */
+  background: radial-gradient(closest-side, #fff, #f36);
+}
+.grad06 {
+  /* 中心位置を中央下に変更 */
+  background: radial-gradient(at bottom, #fff, #f36);
+}
+
+/*repeating-linear-gradient()*/
+.grad07 {
+  background: repeating-linear-gradient(
+    135deg,
+    #fff,
+    #fff 10px,
+    #fef 10px,
+    #fef 20px
+  );
+}
+
+/*repeating-radial-gradient()*/
+.grad08 {
+  background: repeating-radial-gradient(
+    circle farthest-side,
+    #fff 25%,
+    #faf 35%,
+    #faf 35%,
+    #fff 50%
+  );
+}
+
+/* フィルター効果
+---------------------------*/
+img.filter01 {
+  filter: grayscale(100%);
+}
+img.filter02 {
+  filter: sepia(100%);
+}
+img.filter03 {
+  filter: contrast(150%);
+}
+img.filter04 {
+  filter: brightness(50%);
+}
+img.filter05 {
+  filter: saturate(50%);
+}
+img.filter06 {
+  filter: hue-rotate(45deg);
+}
+img.filter07 {
+  filter: invert(100%);
+}
+img.filter08 {
+  filter: opacity(50%);
+}
+img.filter09 {
+  filter: blur(5px);
+}
