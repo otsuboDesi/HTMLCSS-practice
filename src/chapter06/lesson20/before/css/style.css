@@ -3,16 +3,35 @@
 
 /*text-shadow*/
 .ts01 {
+  /* text-shadow: X方向の距離 y方向の距離 ぼかし幅 影色; */
+  /* Drop shadow */
+  text-shadow: 2px 2px 3px #999;
 }
 .ts02 {
+  /* Glow */
+  color: #fff;
+  text-shadow: 0 0 5px #999;
 }
 .ts03 {
+  /* Bavel */
+  color: #ccc;
+  text-shadow: -1px -1px 0 #fff, 1px 1px 0 #aaa;
 }
 .ts04 {
+  /* Emboss */
+  color: #ccc;
+  text-shadow: -1px -1px 0 #aaa, 1px 1px 0 #fff;
 }
 .ts05 {
+  /* Stroke */
+  color: #fff;
+  text-shadow: 1px 1px 0 #999, -1px 1px #999, 1px -1px #999, -1px -1px #999;
 }
 .ts06 {
+  /* Neon */
+  /* 白門の周囲に明るい色のシャドウを何回か重ねるとネオンになります */
+  text-shadow: 0 0 5px #fff, 0 0 13px #f03, 0 0 13px #f03, 0 0 13px #f03,
+    0 0 13px #f03;
 }
 
 /*text-stroke*/
