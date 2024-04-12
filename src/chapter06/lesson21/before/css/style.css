@@ -32,10 +32,16 @@
 
 /*rotate()*/
 .rotate01 {
+  /* 45度回転 */
+  transform: rotate(45deg);
 }
 .rotate02 {
+  /* 15度逆回転 */
+  transform: rotate(-15deg);
 }
 .rotate03 {
+  /* Y軸反転 */
+  transform: rotate(180deg);
 }
 
 /*skew()*/
