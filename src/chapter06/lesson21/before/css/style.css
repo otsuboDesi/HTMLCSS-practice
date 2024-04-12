@@ -3,10 +3,16 @@
 
 /*translate()*/
 .trans01 {
+  /* 右へ30px移動 */
+  transform: translate(30px, 0);
 }
 .trans02 {
+  /* 下へ30px移動 */
+  transform: translate(0, 30px);
 }
 .trans03 {
+  /* 右へ30px上へ30px移動 */
+  transform: translate(30px, -30px);
 }
 
 /*scale()*/
