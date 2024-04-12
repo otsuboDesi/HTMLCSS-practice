@@ -123,7 +123,21 @@
 }
 
 /*border-image*/
+/* border-image */
+/* border-imageを使用する場合は、一部のブラウザにバグがあるため、必ず別途border-styleを設定しておく必要がある。 */
 .bdi {
+  border: 24px solid #fbef82; /*フォールバック指定: border-imageが適用されなかった場合これが表示される*/
+  border-image: url(../img/bdi.png) 24 round;
+  /* リピート指定を複数にした場合,最初の値が上下、次の値が左右になる */
+  border-image: url(../img/bdi.png) 24 round stretch;
+
+  /* スライスサイズが異なる線幅指定をした場合 */
+  /* border-widthで指定する */
+  border: 12px solid #fbef82;
+  border-image: url(../img/bdi.png) 24 round;
+  /* border-image-widthで指定する */
+  border: 12px solid #fbef82;
+  border-image: url(../img/bdi.png) 24 / 12px round;
 }
 
 /* 背景画像とグラデーション
