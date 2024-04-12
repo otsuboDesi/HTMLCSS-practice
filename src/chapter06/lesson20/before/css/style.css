@@ -160,10 +160,18 @@
 
 /*linear-gradient()*/
 .grad01 {
+  /* 上から下への２色グラデーション */
+  /* default valueは上から下へなのでto bottomはいらない */
+  background: linear-gradient(to bottom, #f36, #fff);
 }
 .grad02 {
+  /* 左から右への3色グラデーション */
+  background: linear-gradient(to right, #f36 0%, #fff 50%, #f63 100%);
 }
 .grad03 {
+  /* 左上から右下への3色グラデーション */
+  /* to right bottomの代わりに角度（deg）を使うこともできる */
+  background: linear-gradient(to right bottom, #f36 0%, #fff 50%, #f63 100%);
 }
 
 /*radial-gradient()*/
