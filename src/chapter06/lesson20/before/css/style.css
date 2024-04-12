@@ -58,22 +58,40 @@
 ---------------------------*/
 /*border-radius*/
 .bdr01 {
+  border-radius: 10px;
 }
 .bdr02 {
+  /* 50px: 左上と右下
+    0: 右上と左下 */
+  border-radius: 50px 0;
 }
 .bdr03 {
+  /* 左上、右上と左下、右下*/
+  border-radius: 0 25px 50px;
 }
 .bdr04 {
+  border-radius: 0 10px 25px 50px;
 }
 
+/* 正円 */
 .bdr .circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
 }
+/* 楕円 */
 .bdr .ellipse {
+  width: 250px;
+  height: 150px;
+  border-radius: 50%;
 }
-
+/* 膨らんだ長方形 */
 .bdr05 {
+  border-radius: 50px 30px;
 }
+/* ゆがみ円 */
 .bdr06 {
+  border-radius: 30% 60% 60% 50%/ 80% 40% 70% 30%;
 }
 
 /*box-shadow*/
