@@ -36,12 +36,22 @@
 
 /*text-stroke*/
 .t-stroke01 {
+  /* text-strokeはIE非対応 */
+  /* このプロパティはテキストの内側に線を引くため、ある程度太いフォントでないと見栄えが悪くなってしまう */
+  -webkit-text-stroke: 1px #000;
 }
 .t-stroke02 {
+  -webkit-text-stroke: 1px #000;
+  text-shadow: 2px 2px 0 #000;
 }
 
 /*background-clip: text*/
+/* background-clipはIE非対応 */
+/* background-clipは背景の画像をボックスのどの領域で切り抜くかを指定するプロパティ値を'text'にすると背景画像をテキストの形に切り抜くことが出来ます */
 .clip {
+  background: url(../img/bg_flower.jpg) center center no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* ボックスの装飾
