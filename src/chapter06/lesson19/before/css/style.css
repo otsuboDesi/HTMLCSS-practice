@@ -36,14 +36,29 @@ a[href$=".pdf"] {
 
 /* 〜child系 =========== */
 /*最後の子要素*/
+.child :last-child {
+  border-color: #f00;
+}
 
 /*3番目の子要素*/
+.child :nth-child(3) {
+  color: #f00;
+}
 
 /*後ろから3番目の子要素*/
+.child :nth-last-child(3) {
+  color: #00f;
+}
 
 /*偶数番目の子要素*/
+.child :nth-child(even) {
+  color: #ccc;
+}
 
 /*2番目を先頭に３つおきの子要素*/
+.child :nth-last-child(3n + 2) {
+  border: #000 3px solid;
+}
 
 /* 〜of-type系 =========== */
 /*最初の要素*/
