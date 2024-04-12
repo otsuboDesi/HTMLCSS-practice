@@ -144,12 +144,18 @@
 ---------------------------*/
 /*background-size*/
 .bgsize02 {
+  /* 写真の比率を保ちつつ背景画像は常に立てまたは横の1辺に100％フィットして要素全体を覆う状態になる */
+  background-size: cover;
 }
 .bgsize03 {
+  background-size: contain;
 }
 .bgsize04 {
+  /* 写真の比率を無視して常にその背景画像で要素全体を覆う状態になる */
+  background-size: 100% 100%;
 }
 .bgsize05 {
+  background-size: 170px 100px;
 }
 
 /*linear-gradient()*/
