@@ -19,9 +19,18 @@ li[class*="CNT"] {
 /* 練習 =========== */
 
 /*外部サイトへのリンク*/
+/* 頭にhttpがついているものはアイコンを付ける */
+a[href^="http"] {
+  padding-right: 20px;
+  background: url(../img/icon_blank.gif) right center no-repeat;
+}
 
 /*PDFファイルへのリンク*/
-
+/* 頭にpdfがついているものはアイコンを付ける */
+a[href$=".pdf"] {
+  padding-left: 20px;
+  background: url(../img/icon_pdf.gif) no-repeat;
+}
 /* 擬似クラス
 ---------------------------*/
 
