@@ -81,6 +81,7 @@
 p.btn01 a {
   background-color: #9c9;
   color: #fff;
+  transition: 1s;
 }
 
 p.btn01 a:hover {
@@ -92,6 +93,7 @@ p.btn01 a:hover {
 p.btn02 a {
   background-color: #9c9;
   color: #fff;
+  transition: background-color 1s;
 }
 
 p.btn02 a:hover {
@@ -103,6 +105,7 @@ p.btn02 a:hover {
 p.btn03 a {
   background-color: #9c9;
   color: #fff;
+  transition: background-color 1s 0s, color 1s 1s;
 }
 
 p.btn03 a:hover {
