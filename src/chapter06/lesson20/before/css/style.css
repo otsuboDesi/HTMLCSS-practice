@@ -159,6 +159,7 @@
 }
 
 /*linear-gradient()*/
+/* 線形グラデーション */
 .grad01 {
   /* 上から下への２色グラデーション */
   /* default valueは上から下へなのでto bottomはいらない */
@@ -175,15 +176,29 @@
 }
 
 /*radial-gradient()*/
+/* 円形グラデーション */
 .grad04 {
+  /* 正円 */
+  background: radial-gradient(circle, #fff, #f36);
 }
 .grad05 {
+  /* サイズを最も近い辺まで */
+  background: radial-gradient(closest-side, #fff, #f36);
 }
 .grad06 {
+  /* 中心位置を中央下に変更 */
+  background: radial-gradient(at bottom, #fff, #f36);
 }
 
 /*repeating-linear-gradient()*/
 .grad07 {
+  background: repeating-linear-gradient(
+    135deg,
+    #fff,
+    #fff 10px,
+    #fef 10px,
+    #fef 20px
+  );
 }
 
 /*repeating-radial-gradient()*/
