@@ -46,10 +46,16 @@
 
 /*skew()*/
 .skew01 {
+  /* X軸方向に30度傾斜 */
+  transform: skew(30deg, 0);
 }
 .skew02 {
+  /* Y軸方向に30度傾斜 */
+  transform: skew(0, 30deg);
 }
 .skew03 {
+  /* X軸・Y軸両方向に30度傾斜 */
+  transform: skew(30deg, 30deg);
 }
 
 /* Transform-Origin
