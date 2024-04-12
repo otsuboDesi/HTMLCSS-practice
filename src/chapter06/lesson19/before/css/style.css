@@ -78,8 +78,15 @@ a[href$=".pdf"] {
 
 /* 練習 =========== */
 /*しましまテーブル*/
+/* th要素が偶数の時 */
+.stripe tr:nth-child(even) {
+  background-color: #eee;
+}
 
 /*最後の1行を赤文字に*/
+.lastRed :last-of-type {
+  color: #f00;
+}
 
 /* その他の擬似クラス
 ---------------------------*/
