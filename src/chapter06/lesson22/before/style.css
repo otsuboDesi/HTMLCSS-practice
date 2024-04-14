@@ -169,24 +169,27 @@ a[href^="mailto:"]::after {
     width: 60%;
     margin: 0 auto 10px;
   }
+
+  /* 飼い主紹介 */
+  #profile img.imgL {
+    float: none;
+  }
+
+  #profile {
+    text-align: center;
+  }
+
+  #profile h2,
+  #profile dl {
+    text-align: left;
+  }
 }
 
-/* 飼い主紹介 */
-#profile img.imgL {
-  float: none;
-}
-
-#profile {
-  text-align: center;
-}
-
-#profile h2,
-#profile dl {
-  text-align: left;
-}
-
-/* title */
-h1 {
-  width: 200px;
-  font-size: 200%;
+/* 480px以下の場合のレイアウト調整用 */
+@media screen and (max-width: 480px) {
+  /* title */
+  h1 {
+    width: 200px;
+    font-size: 200%;
+  }
 }
