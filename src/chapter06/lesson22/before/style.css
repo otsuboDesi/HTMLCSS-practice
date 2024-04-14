@@ -2,7 +2,9 @@
 
 /*画像の伸縮設定*/
 img {
+  /* 親要素が画像幅より小さくなったら自動で縮小する */
   max-width: 100%;
+  /* 画像比率を正しく維持する */
   height: auto;
 }
 
@@ -92,8 +94,11 @@ h1 {
 
 /*コンテンツ枠の設定*/
 #contents {
+  /* widthの幅計算対象をborder-boxに変更 */
   box-sizing: border-box;
+  /* 最大960px(padding、borderを含む)まで自動伸縮する */
   max-width: 960px;
+  /* 親要素の幅に合わせて指定比率で伸縮する */
   margin: 40px auto;
   padding: 4% 8%;
   border: 1px solid #f6bb9a;
@@ -102,6 +107,7 @@ h1 {
 
 /*猫写真の幅*/
 #cats img {
+  /* 2段階枠組みの中で写真を占める幅を割合で指定 */
   width: 60%;
 }
 
