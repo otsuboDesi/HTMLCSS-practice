@@ -168,6 +168,10 @@ a:hover img {
 
 /*footer
 --------------------*/
+.footer {
+  padding: 20px 0;
+  background: #d8c7a0;
+}
 /*
 =========================================
   Modules（Parts）
