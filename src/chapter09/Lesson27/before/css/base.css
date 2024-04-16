@@ -73,6 +73,7 @@ time,
 mark,
 audio,
 video {
+  /* 要素のmarginとpaddingを0にする */
   margin: 0;
   padding: 0;
 }
@@ -88,10 +89,12 @@ main,
 menu,
 nav,
 section {
+  /* 旧ブラウザの表示対策 */
   display: block;
 }
 
 html {
+  /* スマートフォン等の横長表示での文字サイズ拡大防止 */
   -webkit-text-size-adjust: 100%;
 }
 
@@ -101,10 +104,12 @@ img {
 
 ul,
 ol {
+  /* listの・を非表示 */
   list-style-type: none;
 }
 
 table {
+  /* 表組の罫線を重ねて表示 */
   border-collapse: collapse;
   border-spacing: 0;
 }
@@ -113,6 +118,7 @@ img,
 input,
 select,
 textarea {
+  /* インラインの中のアイテム表示位置調整 */
   vertical-align: middle;
 }
 
