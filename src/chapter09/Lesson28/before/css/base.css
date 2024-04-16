@@ -143,7 +143,14 @@ a:hover img {
 */
 
 /*container*/
-
+.container {
+  /* 最大940pxで固定 */
+  max-width: 940px;
+  /* 中央寄せ */
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
 /*
 =========================================
   Modules（Block）
@@ -164,6 +171,23 @@ a:hover img {
   background: #d8c7a0;
 }
 
+.gnav ul {
+  display: flex;
+}
+
+.gnav li {
+  /* アイテムの幅を親要素の1/4にする */
+  width: 25%;
+}
+
+.gnav a {
+  display: block;
+  padding: 15px 0;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+}
 /*Google Map
 --------------------*/
 .map {
