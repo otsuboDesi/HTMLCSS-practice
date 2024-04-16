@@ -122,6 +122,18 @@ textarea {
   vertical-align: middle;
 }
 
+/* サイト全体の共通スタイルを指定する */
+a {
+  color: #59220d;
+  transition: 0.5s;
+}
+a:hover {
+  color: #d53e04;
+}
+a:hover img {
+  opacity: 0.7;
+}
+
 /*
 =========================================
   Base Layout
