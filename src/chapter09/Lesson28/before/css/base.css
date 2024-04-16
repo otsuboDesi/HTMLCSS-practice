@@ -209,6 +209,30 @@ a:hover img {
 
 /*information
 --------------------*/
+.info-list {
+  /* itemを横並びにする */
+  display: flex;
+  /* 複数行表示にする */
+  flex-wrap: wrap;
+}
+
+.info-list dt {
+  /* infoの日付部分を親要素の30%にする */
+  width: 30%;
+  padding: 10px 0;
+  border-top: 1px #d8c7a0 dotted;
+}
+
+.info-list dd {
+  /* infoの情報部分を親要素の70%にする */
+  width: 70%;
+  padding: 10px 0;
+  border-top: 1px #d8c7a0 dotted;
+}
+
+.info-list :first-of-type {
+  border-top: none;
+}
 
 /*footer
 --------------------*/
