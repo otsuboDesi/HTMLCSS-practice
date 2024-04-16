@@ -157,7 +157,9 @@ a:hover img {
 
 /*global navigation
 --------------------*/
-
+.gnav {
+  background: #d8c7a0;
+}
 /*Google Map
 --------------------*/
 
