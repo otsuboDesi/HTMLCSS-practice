@@ -104,6 +104,7 @@ body {
 
 img {
   border: 0;
+  /* 画像のフルードイメージ化 */
   max-width: 100%;
   height: auto;
 }
@@ -162,6 +163,8 @@ a:hover img {
 .header {
   height: 500px;
   background: url(../img/bg_header.jpg) center center no-repeat;
+  /* header領域全体を背景画像で覆うようにフルードイメージ化する */
+  /* フルードイメージは、ブラウザーのウィンドウ幅にあわせて画像のサイズをフィットさせる手法 */
   background-size: cover;
 }
 
