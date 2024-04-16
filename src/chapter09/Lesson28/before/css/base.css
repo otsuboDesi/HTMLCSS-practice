@@ -163,8 +163,25 @@ a:hover img {
 .gnav {
   background: #d8c7a0;
 }
+
 /*Google Map
 --------------------*/
+.map {
+  /* 絶対配置の基準ボックスを設定 */
+  position: relative;
+  /* 親要素の幅に対して50％の高さの可変空間領域を確保 */
+  padding-top: 50%;
+}
+
+.map iframe {
+  /* 可変空白領域の上にiframe枠を絶対配置 */
+  position: absolute;
+  left: 0;
+  top: 0;
+  /* 親要素の幅と高さにフィットさせる */
+  width: 100%;
+  height: 100%;
+}
 
 /*information
 --------------------*/
