@@ -505,7 +505,18 @@ a:hover img {
 }
 
 /*三角アイコン*/
-
+.heading .more::after {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 5px;
+  /* 透明なラインを引く */
+  border: transparent 5px solid;
+  /* 左側にのみ白いラインを引く */
+  border-left-color: #fff;
+  vertical-align: middle;
+}
 /*
 =========================================
   Utilities
