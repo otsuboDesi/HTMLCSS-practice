@@ -281,6 +281,18 @@ a:hover img {
 
 /*staff
 --------------------*/
+#staff {
+  padding: 20px;
+  background: repeating-linear-gradient(
+    135deg,
+    #fff,
+    #fff 10px,
+    #fcf2d9 10px,
+    #fcf2d9 20px
+  );
+  /* paddingも含めて計算ができるようにbox-sizingを追加する(カラム乙防止のため) */
+  box-sizing: border-box;
+}
 .staff-photo {
   margin: 0 auto 20px;
 }
