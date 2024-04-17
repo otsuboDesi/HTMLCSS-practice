@@ -496,7 +496,8 @@ a:hover img {
   position: relative;
   bottom: -3px;
 }
-@media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2ddpx) {
+/* WebKitブラウザー用、デバイスのピクセル比が2以上の場合にスタイルを適用,   他のブラウザー用、デバイスの解像度が1インチあたり2ドット以上の場合にスタイルを適用  */
+@media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .heading::before {
     background: url(../img/ico_pot@2x.svg) no-repeat;
     background-size: contain;
