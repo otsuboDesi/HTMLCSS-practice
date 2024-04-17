@@ -294,7 +294,15 @@ a:hover img {
   box-sizing: border-box;
 }
 .staff-photo {
+  /* コンテンツの幅 400 / 670 * 100 = 59.7014% */
+  width: 59.7014%;
   margin: 0 auto 20px;
+}
+@media screen and (min-width: 768px) {
+  .staff-photo {
+    /*  コンテンツの幅 230 / 420 * 100 = 54.7619% */
+    width: 54.7619%;
+  }
 }
 .staff-heading {
   display: block;
