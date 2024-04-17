@@ -347,6 +347,26 @@ a:hover img {
   overflow: hidden;
 }
 
+@media screen and (minwidth: 769px) {
+  .footer-info {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-info-ph {
+    /* footer left side */
+    /* コンテンツの幅 300px / 画面の幅 940px * 100 = 31.9145% */
+    /* 本当はこういう数値に小数点以下までいれるのはよくない */
+    width: 31.9148%;
+  }
+
+  .footer-info-data {
+    /* footer right side */
+    /*620px / 940px *100 = 65.9574% */
+    width: 65.9574%;
+  }
+}
+
 /*SNS*/
 .sns {
   margin-bottom: 15px;
