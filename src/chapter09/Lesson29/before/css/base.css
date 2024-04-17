@@ -154,6 +154,26 @@ a:hover img {
 
 /*grid*/
 
+@media screen and (min-width: 768px) {
+  /*汎用2カラム,3カラム指定*/
+  .pc-grid-col2,
+  .pc-grid-col3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  /*2カラムの列幅*/
+  .pc-grid-col2 .col {
+    /*460px / 940px *100 = 48.9361% */
+    width: 48.9361%;
+  }
+  /*3カラムの列幅*/
+  .pc-grid-col3 .col {
+    /*300px / 940px *100 = 31.9148% */
+    width: 31.9148%;
+  }
+}
 /*
 =========================================
   Modules（Block）
@@ -347,7 +367,7 @@ a:hover img {
   overflow: hidden;
 }
 
-@media screen and (minwidth: 769px) {
+@media screen and (min-width: 768px) {
   .footer-info {
     display: flex;
     justify-content: space-between;
